@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "packages/demo/api/snake.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/github-contribution-grid-snake.svg",
+      "dest": "packages/demo/api/snake.js"
+    }
+  ]
+}
